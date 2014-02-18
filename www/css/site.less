@@ -1,0 +1,148 @@
+@import "mixins.less";
+@import "reset.less";
+@import "classes.less";
+
+@blue-text: #438dcc;
+@orange-text: #f26522;
+@deepblue-text: #3f586e;
+@text-color: #626262;
+@text-size: 13px;
+@text-font: Arial, sans-serif;
+@site-background: #fff;
+@link-color: @blue-text;
+@link-visited-color: @blue-text;
+@link-hover-color: @orange-text;
+@container-width: 860px;
+
+
+.orange {color: @orange-text;}
+a {color: @link-color;}
+a:hover {color: @link-hover-color;}
+body {
+  overflow-x: hidden;
+  color: @text-color;
+
+  header {
+	background-color: #3f586e;
+	padding: 30px 0 40px;
+
+	.container {
+	  margin: auto;
+	  max-width: @container-width;
+	  padding: 0 10px;
+
+	  img {display: block;}
+	  #logo {float: right;}
+	  #channel-logo {
+		max-width: 279px;
+		width: 100%;
+		margin: -80px auto -30px;
+	  }
+	  h2 {
+		display: block;
+		text-align: center;
+		color: #fff;
+		font-size: 27px;
+		font-weight: normal;
+		margin-top: 40px;
+	  }
+	}
+  }
+
+  #top-panel {
+    background: #d61416 url(/i/top-panel-bg.gif) repeat-x;
+	height: 25px;
+  }
+  section {
+	margin: auto;
+	max-width: @container-width;
+	padding: 60px 10px 120px;
+
+	.electrotext {
+	  #electrotext {
+		min-height: 40px;
+	  }
+	  .link-area {
+		text-align: right;
+		padding-right: 0px;
+		margin-right: -24px;
+		font-size: 16px;
+
+		a:hover {
+		  color: #8dc63f;
+		}
+	  }
+	}
+	h1 {
+	  .big-text();
+	  color: @deepblue-text;
+	  margin: 60px 0 30px;
+	}
+	.deepblue {
+	  color: @deepblue-text;
+	}
+	.green-block {
+	  background-color: @deepblue-text;
+	  color: #fff;
+	  padding: 3px 5px;
+	  margin: 0;
+	  display: inline-block;
+	}
+
+	.floatleft {
+	  width: 60%;
+
+	  p {
+		margin: 30px 0;
+	  }
+	  fieldset {
+		border: 0;
+		margin: 0;
+		padding: 0;
+	  }
+	  h2 {
+		.big-text();
+	  }
+	  .contacts {
+		padding-left: 35px;
+	  }
+	  button {
+		height: 36px;
+		width: 178px;
+	  }
+	}
+	.floatright {
+	  width: 35%;
+	  padding-top: 40px;
+
+	  strong {
+		.big-text();
+		display: block;
+		color: @orange-text;
+	  }
+	}
+	.large-link-list {
+	  font-size: 18px;
+
+	  a {
+		margin-right: 10px;
+	  }
+	}
+	h3 {
+	  color: @deepblue-text;
+	  margin: 50px 0 0;
+	}
+	h3+p {
+	  margin-top: 0;
+	}
+  }
+  section>h1:first-child {
+	margin-top: 0;
+  }
+  footer {
+	margin: auto;
+	max-width: @container-width;
+	padding: 0 10px;
+  }
+  #counter {}
+}
