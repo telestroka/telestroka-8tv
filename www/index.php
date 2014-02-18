@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 		$message = '
 Город: Новосибирск
-Канал: 49
+Канал: 8
 ' . $form->name->title . ': ' . $form->name->value . '
 ' . $form->phone->title . ': ' . $form->phone->value . '
 ' . $form->num->title . ': ' . $form->num->value . '

@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin
 Disallow: /ok
 Disallow: /404
-Host: nsk49.telestroka.ru
+Host: 8tv.telestroka.ru
